@@ -1,0 +1,37 @@
+.footer {
+    background-color: $colorRed;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+
+        @media screen and (max-width: $smalltablet){
+            flex-direction: column;
+            justify-content: center;
+            height: fit-content;
+            padding: 15px 25px;
+        }
+    }
+
+    &__p, p {
+        padding: 0;
+        @include fontSize14px;
+        color: $colorWhite;
+
+        @media screen and (max-width: $smalltablet){
+            text-align: center;
+        }
+
+        a {
+            @include fontSize14px;
+            color: $colorWhite;
+            transition: 0.3s ease all;
+
+            &:hover {
+                color: $colorGray;
+            }
+        }
+    }
+}

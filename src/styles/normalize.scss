@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: $colorGray;
+    font-family: $fontManrope;
+    font-weight: 400;
+    @include fontSize16px;
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+    color: $colorGray;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul ul {
+    padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+ul ul {
+    margin: 0;
+}
+
+img, figure, picture, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+form, fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+
+    @media screen and (max-width:$bigtablet) {
+        width: 1000px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 746px;
+    }
+
+    @media screen and (max-width: $smalltablet) {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+}

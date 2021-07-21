@@ -1,0 +1,260 @@
+.topbar {
+    position: relative;
+    z-index: 4;
+    background-color: $colorOrange;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+    }
+
+    h2 {
+        padding: 0;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-weight: 400;
+
+
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        picture {
+            width: 76px;
+            height: auto;
+            margin-right: 40px;
+
+            // @media screen and (max-width: $bigtablet) {
+            //     width: 120px;
+            // }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        span {
+            color: $colorWhite;
+            font-weight: 400;
+            @include fontSize14px;
+
+            b {
+                @include fontSize18px;
+            }
+        }
+    }
+
+    .burgermenu {
+        background: url(../../images/svg/hamburger-32x32.svg) center center no-repeat;
+        background-size: 70% auto;
+        width: 44px;
+        height: 44px;
+        margin-left: 15px;
+
+        @media screen and (min-width: $bigtablet) {
+            display: none;
+        }
+    }
+
+    .navbar {
+        z-index: 1;
+        position: relative;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            z-index: 2;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        li {
+            position: initial;
+            display: inline-block;
+            z-index: 2;
+            position: relative;
+            margin-left: 35px;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:hover > a {
+                //color: $colorRed;
+            }
+
+            &:hover > .sub {
+                background-image: url(../../images/svg/icon-arrow-bottom-gray.svg);
+            }
+
+            a {
+                display: inline-block;
+                transition: all 0.3s ease;
+                position: relative;
+                transition: 0.3s ease color;
+                line-height: 110px;
+                padding: 0;
+                color: $colorWhite;
+            }
+
+            .active {
+                color: $colorGray;
+            }
+
+            &:last-of-type {
+
+                a {
+                    margin-right: 0;
+                }
+            }
+
+            .sub {
+                padding: 0 20px 0 0;
+                background-image: url(../../images/svg/icon-arrow-bottom.svg);
+                background-position: right center;
+                background-size: 10px auto;
+                background-repeat: no-repeat;
+
+                &:hover > {
+                    //background-image: url(../../images/svg/icon-arrow-bottom-gray.svg);
+                }
+            }
+
+            ul {
+                position: absolute;
+                top: 110px;
+                left: -45px;
+                padding: 0;
+                z-index: 5;
+                flex-direction: column;
+                width: fit-content;
+                max-height: 0;
+                height: 0;
+                opacity: 0;
+                transition: 0.3s ease opacity;
+                min-width: 114px;
+                z-index: 5;
+                align-items: flex-start;
+                border: none;
+                background-color: $colorWhite;
+
+                li {
+                    white-space: nowrap;
+                    display: none;
+                    z-index: 5;
+                    margin-left: 0;
+
+                    a {
+                        line-height: 1.7;
+                        text-transform: initial;
+                        color: $colorGray;
+                        width: 100%;
+                        display: block;
+                        margin-right: 0;
+                        @include fontSize16px;
+
+                        &:hover {
+                            color: $colorRed;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+
+                ul {
+                    height: auto;
+                    opacity: 1;
+                    max-height: 900px;
+                    padding: 45px;
+                    //background-color: $colorBrown;
+                    //min-width: 100%;
+
+                    li {
+                        display: inline-block;
+                        width: fit-content;
+                        //padding: 0 20px;
+                        opacity: 1;
+
+                        // ul {
+                        //     position: absolute;
+                        //     top: -23px;
+                        //     left: 100%;
+                        //     max-height: 800px;
+                        //     height: fit-content;
+                        //     opacity: 1;
+                        //     padding: 0;
+                        //     background-color: $colorRed;
+
+                        //     li {
+                        //         display: none;
+                        //     }
+                        // }
+
+                        // a {
+                        //     //z-index: 5;
+                        // }
+
+                        // &:hover {
+
+                        //     ul {
+                        //         height: auto;
+                        //         opacity: 1;
+                        //         max-height: 700px;
+                        //         //padding: 28px 33px;
+                        //         padding: 28px 0;
+
+                        //         li {
+                        //             display: inline-block;
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+            }    
+        }
+    }
+
+    &__bip {
+        width: 52px;
+        height: 22px;
+        background-image: url(../../images/svg/icon-bip.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        transition: 0.3s ease all;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__homepage {
+        width: 20px;
+        height: 21px;
+        background-image: url(../../images/svg/icon-house.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        transition: 0.3s ease all;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

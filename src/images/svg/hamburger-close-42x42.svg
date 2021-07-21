@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Warstwa_x0020_1">
+        <g>
+            <g>
+                <clipPath id="_clip1">
+                    <path d="M21,0C9.398,0 0,9.398 0,21C0,32.603 9.398,42 21,42C32.603,42 42,32.603 42,21C42,9.397 32.602,0 21,0Z"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g>
+                        <g transform="matrix(2.62224,-2.62224,0.947214,0.947214,-2.62054,39.2898)">
+                            <rect x="0" y="0" width="15.982" height="5.629" style="fill:#272444;"/>
+                        </g>
+                        <g transform="matrix(2.62224,2.62224,-0.947214,0.947214,2.71048,-2.61997)">
+                            <rect x="0" y="0" width="15.982" height="5.629" style="fill:#272444;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <path d="M21,0C9.398,0 0,9.398 0,21C0,32.603 9.398,42 21,42C32.603,42 42,32.603 42,21C42,9.397 32.602,0 21,0Z" style="fill:none;"/>
+    </g>
+</svg>
