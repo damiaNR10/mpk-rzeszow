@@ -1,0 +1,36 @@
+.prize {
+    background-color: $colorWhite;
+    padding: 0 30px;
+    line-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $smalltablet) {
+        line-height: 40px;
+    }
+
+    &__name {
+        padding: 0;
+        font-weight: 400;
+    }
+
+    &__value {
+        color: $colorGreen;
+        font-weight: 700;
+        @include fontSize24px;
+
+        &--blue {
+            color: $colorBlue;
+        }
+
+        &--gray {
+            color: $colorGray;
+        }
+
+        &--green {
+            color: $colorGreen;;
+        }
+    }
+}

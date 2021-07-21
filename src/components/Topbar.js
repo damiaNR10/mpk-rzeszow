@@ -1,5 +1,7 @@
 //import { render } from '@testing-library/react';
 import React from 'react';
+import Homepage from '../views/Homepage';
+import Contact from '../views/Contact';
 import {
     BrowserRouter as Router,
     Switch,
@@ -14,8 +16,11 @@ function Topbar() {
         <Router>
         <header className="topbar">
             <div className="container">
-                <h2><a href={process.env.PUBLIC_URL}></a><picture><img src={mainLogo} alt="" /></picture><span><b>Miejskie Przedsiębiorstwo<span>{<br/>}</span>Komunikacyjne</b> – Rzeszów Sp. z o.o.</span></h2>
-                <a className="topbar__homepage" href=""></a>
+                <h2>                
+                    <Link to="/homepage"></Link>
+                    <picture><img src={mainLogo} alt="" /></picture><span><b>Miejskie Przedsiębiorstwo<span>{<br/>}</span>Komunikacyjne</b> – Rzeszów Sp. z o.o.</span>
+                </h2>
+                <Link className="topbar__homepage" to="/homepage"></Link>
                 <nav className="navbar">
                     <ul>
                         {/* <li>
@@ -60,8 +65,14 @@ function Topbar() {
                 <div className="burgermenu"></div>
             </div>
         </header>
-        {/* <Switch>
-            <Route path="/about">
+        <Switch>
+            <Route path="/homepage">
+                <Homepage />
+            </Route>
+            <Route path="/contact">
+                <Contact />
+            </Route>
+            {/* <Route path="/about">
                 <About />
             </Route>
             <Route path="/topics">
@@ -69,8 +80,8 @@ function Topbar() {
             </Route>
             <Route path="/">
                 <Home />
-            </Route>
-        </Switch> */}
+            </Route> */}
+        </Switch>
         </Router>
     );
 }

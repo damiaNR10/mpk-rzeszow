@@ -3,8 +3,10 @@ $tablet: 1023px;
 $smalltablet: 767px;
 $mobile: 479px;
 
+$colorBlue: #283491;
 $colorCreamy: #F2F2F2;
 $colorGray: #333333;
+$colorGreen: #429F46;
 $colorOrange: #C52828;
 $colorRed: #B0151B;
 $colorWhite: #FEFEFE;
@@ -44,6 +46,18 @@ $fontManrope: 'Manrope', sans-serif;
 
     @media screen and (max-width: $mobile) {
         font-size: 14px;
+    }
+}
+
+@mixin fontSize24px {
+    font-size: 24px;
+
+    @media screen and (max-width: $smalltablet) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 18px;
     }
 }
 

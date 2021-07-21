@@ -1,15 +1,13 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Slider from '../components/Slider';
-import Topbar from '../components/Topbar';
+import Prizes from '../components/Prizes';
 
 class Homepage extends React.Component {
     render() {
         return ( 
             <>
-                <Topbar />
                 <Slider />
-                <Footer />
+                <Prizes />
             </>
         );
     }
