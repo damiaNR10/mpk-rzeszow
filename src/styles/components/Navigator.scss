@@ -1,0 +1,28 @@
+.navigator {
+    background-color: $colorRed;
+    color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    font-weight: 700;
+    @include fontSize18px;
+    transition: 0.2s ease all;
+
+    @media (max-width: $smalltablet) {
+        height: 75px;
+    }
+
+    @media (max-width: $mobile) {
+        height: 60px;
+    }
+
+    &:hover {
+        background-color: $colorGray;
+    }
+
+    img {
+        margin-right: 20px;
+        height: auto;
+    }
+}

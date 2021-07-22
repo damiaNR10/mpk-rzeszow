@@ -1,26 +1,24 @@
 //import { render } from '@testing-library/react';
 import React from 'react';
-import Homepage from '../views/Homepage';
-import Contact from '../views/Contact';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
-import mainLogo from '../images/svg/main-logo.svg';
+// import mainLogo from '../images/svg/main-logo.svg';
 
 function Topbar() {
 
     return (   
-        <Router>
+        // <Router>
         <header className="topbar">
             <div className="container">
                 <h2>                
-                    <Link to="/homepage"></Link>
-                    <picture><img src={mainLogo} alt="" /></picture><span><b>Miejskie Przedsiębiorstwo<span>{<br/>}</span>Komunikacyjne</b> – Rzeszów Sp. z o.o.</span>
+                    <Link to="/"></Link>
+                    <picture><img src="/images/main-logo.svg" alt="" /></picture><span><b>Miejskie Przedsiębiorstwo<span>{<br/>}</span>Komunikacyjne</b> – Rzeszów Sp. z o.o.</span>
                 </h2>
-                <Link className="topbar__homepage" to="/homepage"></Link>
+                <Link className="topbar__homepage" to="/"></Link>
                 <nav className="navbar">
                     <ul>
                         {/* <li>
@@ -65,24 +63,7 @@ function Topbar() {
                 <div className="burgermenu"></div>
             </div>
         </header>
-        <Switch>
-            <Route path="/homepage">
-                <Homepage />
-            </Route>
-            <Route path="/contact">
-                <Contact />
-            </Route>
-            {/* <Route path="/about">
-                <About />
-            </Route>
-            <Route path="/topics">
-                <Topics />
-            </Route>
-            <Route path="/">
-                <Home />
-            </Route> */}
-        </Switch>
-        </Router>
+        // </Router>
     );
 }
 

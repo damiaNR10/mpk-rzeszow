@@ -19,7 +19,6 @@
         align-items: center;
         font-weight: 400;
 
-
         a {
             position: absolute;
             left: 0;
@@ -34,9 +33,13 @@
             height: auto;
             margin-right: 40px;
 
-            // @media screen and (max-width: $bigtablet) {
-            //     width: 120px;
-            // }
+            @media screen and (max-width: $tablet) {
+                margin-right: 30px;
+            }
+
+            @media screen and (max-width: $smalltablet) {
+                margin-right: 10px;
+            }
 
             img {
                 width: 100%;
@@ -49,6 +52,10 @@
             font-weight: 400;
             @include fontSize14px;
 
+            @media screen and (max-width: $smalltablet) {
+                display: none;
+            }
+
             b {
                 @include fontSize18px;
             }
@@ -60,7 +67,7 @@
         background-size: 70% auto;
         width: 44px;
         height: 44px;
-        margin-left: 15px;
+        //margin-left: 15px;
 
         @media screen and (min-width: $bigtablet) {
             display: none;
@@ -70,6 +77,10 @@
     .navbar {
         z-index: 1;
         position: relative;
+
+        @media screen and (max-width: $bigtablet) {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -239,6 +250,10 @@
         background-size: 100% auto;
         transition: 0.3s ease all;
 
+        @media screen and (max-width: $bigtablet) {
+            margin: 0 10px 0 15px;
+        }
+
         &:hover {
             transform: scale(1.1);
         }
@@ -252,6 +267,10 @@
         background-position: center;
         background-size: 100% auto;
         transition: 0.3s ease all;
+
+        @media screen and (max-width: $bigtablet) {
+            margin-left: auto;
+        }
 
         &:hover {
             transform: scale(1.1);
