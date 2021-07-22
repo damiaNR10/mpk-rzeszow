@@ -1,4 +1,3 @@
-//import { render } from '@testing-library/react';
 import React from 'react';
 import {
     BrowserRouter as Router,
@@ -6,12 +5,10 @@ import {
     Route,
     Link
   } from "react-router-dom";
-// import mainLogo from '../images/svg/main-logo.svg';
 
 function Topbar() {
 
     return (   
-        // <Router>
         <header className="topbar">
             <div className="container">
                 <h2>                
@@ -63,20 +60,7 @@ function Topbar() {
                 <div className="burgermenu"></div>
             </div>
         </header>
-        // </Router>
     );
 }
-
-// function Home() {
-//     return <h2>Home</h2>;
-// }
-  
-// function About() {
-//     return <h2>About</h2>;
-// }
-
-// function Topics() {
-//     return <h2>Topics</h2>;
-// }
 
 export default Topbar;

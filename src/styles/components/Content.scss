@@ -1,0 +1,9 @@
+.content {
+    height: fit-content;
+
+    &__header {
+        font-weight: 400;
+        @include fontSize28px;
+        padding-bottom: 60px;
+    }
+}

@@ -5,8 +5,9 @@ import Topbar from './components/Topbar';
 import Slider from './components/Slider';
 import Navigation from './components/Navigation';
 import Prizes from './components/PrizeList';
-import Contact from './views/Contact';
 import Aside from './components/Aside';
+import NewsList from './components/NewsList';
+import Contact from './views/Contact';
 
 import {
     BrowserRouter as Router,
@@ -26,14 +27,19 @@ function App() {
                 <div className="main">
                     <div className="container main__container">
                     <Aside />
-                    <Switch>
-                        <Route path="/contact">
-                            <Contact />
-                        </Route>
-                        <Route path="/">
-                            <Homepage />
-                        </Route>
-                    </Switch>
+                    <div className="content">
+                        <Switch>
+                            <Route path="/contact">
+                                <Contact />
+                            </Route>
+                            <Route path="/informations">
+
+                            </Route>
+                            <Route path="/">
+                                <Homepage />
+                            </Route>
+                        </Switch>
+                    </div>
                     </div>
                 </div>
                 <Footer />
