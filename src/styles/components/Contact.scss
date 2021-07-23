@@ -2,6 +2,14 @@
     padding: 50px 40px;
     background-color: $colorWhite;
 
+    @media (max-width: $tablet) {
+        padding: 40px;
+    }
+
+    @media (max-width: $smalltablet) {
+        padding: 30px;
+    }
+
     &__h3 {
         font-weight: 400;
         @include fontSize24px;

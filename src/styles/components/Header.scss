@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+    }
+
+    &__link {
+        font-weight: 700;
+        color: $colorRed;
+        position: relative;
+        transition: 0.2s ease color;
+
+        @media (max-width: $mobile) {
+            margin-left: auto;
+            margin-bottom: 15px;
+        }
+
+        &:after {
+            width:24px;
+            height: 24px;
+            background-color: $colorRed;
+            background-image: url(../../images/svg/icon-arrow-right.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 6px auto;
+            content:'';
+            display: inline-block;
+            margin-left: 20px;
+            transition: 0.2s ease background-color;
+        }
+
+        &:hover {
+            color: $colorGray;
+
+            &:after {
+                background-color: $colorGray;
+            }
+        }
+    }
+}

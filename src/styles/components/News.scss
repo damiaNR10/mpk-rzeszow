@@ -3,6 +3,10 @@
     background-color: $colorWhite;
     position: relative;
 
+    @media (max-width: $smalltablet) {
+        padding: 30px 30px 70px 30px;
+    }
+
     &:before {
         left: 0;
         width:2px;
@@ -26,6 +30,11 @@
         font-weight: 700;
         @include fontSize18px;
         transition: 0.2s ease background-color;
+
+        @media (max-width: $smalltablet) {
+            line-height: 60px;
+            bottom: -20px;
+        }
 
         &:hover {
             background-color: $colorGray;

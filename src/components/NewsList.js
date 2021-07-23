@@ -1,5 +1,11 @@
 import React from 'react';
 import News from './News';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 const { uuid } = require('uuidv4');
 
 class NewsList extends React.Component {
@@ -32,7 +38,6 @@ class NewsList extends React.Component {
 
     render() {
         return ( <>
-            <h2 className="content__header">Ogłoszenia MPK</h2>
             <div className="news-list">
                 {this.state.news.map((news) =><News key={news.key} header={news.header} date={news.date} content={news.content} link={news.link} />)}
             </div>  
