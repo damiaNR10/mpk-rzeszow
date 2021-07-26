@@ -17,6 +17,10 @@ body {
     font-weight: 400;
     @include fontSize16px;
     line-height: 1.1;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
 }
 
 a {

@@ -62,17 +62,17 @@
         }
     }
 
-    .burgermenu {
-        background: url(../../images/svg/hamburger-32x32.svg) center center no-repeat;
-        background-size: 70% auto;
-        width: 44px;
-        height: 44px;
-        //margin-left: 15px;
+    // .burgermenu {
+    //     background: url(../../images/svg/hamburger-32x32.svg) center center no-repeat;
+    //     background-size: 70% auto;
+    //     width: 44px;
+    //     height: 44px;
+    //     //margin-left: 15px;
 
-        @media screen and (min-width: $bigtablet) {
-            display: none;
-        }
-    }
+    //     @media screen and (min-width: $bigtablet) {
+    //         display: none;
+    //     }
+    // }
 
     .navbar {
         z-index: 1;
@@ -251,7 +251,7 @@
         transition: 0.3s ease all;
 
         @media screen and (max-width: $bigtablet) {
-            margin: 0 10px 0 15px;
+            margin: 0 15px;
         }
 
         &:hover {

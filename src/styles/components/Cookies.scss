@@ -11,6 +11,10 @@
     line-height: 15px;
     z-index: 999999999;
 
+    &--disabled {
+        display: none;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -31,14 +35,15 @@
     }
 
     .close {
-        // cursor: pointer;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-
+        border: none;
         color: $colorWhite;
         font-weight: 700;
         text-transform: uppercase;
         margin-left: 20px;
+        background: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

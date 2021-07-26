@@ -5,7 +5,6 @@ import Cookies from './components/Cookies';
 import Footer from './components/Footer';
 import Homepage from './views/Homepage';
 import Navigation from './components/Navigation';
-import NewsList from './components/NewsList';
 import Prizes from './components/PrizeList';
 import Posts from './views/Posts';
 import Slider from './components/Slider';
