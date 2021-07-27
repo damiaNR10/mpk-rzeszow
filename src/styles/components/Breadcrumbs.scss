@@ -1,0 +1,36 @@
+.breadcrumbs {
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 100%;
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+    &__ul {
+        overflow-x: auto;
+        padding: 0 20px 10px 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            display: inline-block;
+
+            &:not(:last-of-type) {
+
+                &:after {
+                    margin: 0 3px;
+                    content: ">";
+                }
+            }
+
+            a {
+                transition: 0.2s ease color;
+
+                &:hover {
+                    color: $colorOrange;
+                }
+            }
+        }
+    }
+}

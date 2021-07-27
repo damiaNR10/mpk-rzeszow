@@ -21,9 +21,6 @@ class Menu extends React.Component {
                 <nav className="menu__nav">
                     <ul>
                         <li>
-                            <Link onClick = {onMenuClose} className="sub" to="/informations">{isBurgerOpen}</Link>
-                        </li>
-                        <li>
                             <Link onClick = {onMenuClose} className="sub" to="/informations">Informacje</Link>
                         </li>
                         <li>

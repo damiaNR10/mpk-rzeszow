@@ -1,6 +1,7 @@
 import React from 'react';
 import Aside from './components/Aside';
 import Contact from './views/Contact';
+import Content from './views/Content';
 import Cookies from './components/Cookies';
 import Footer from './components/Footer';
 import Homepage from './views/Homepage';
@@ -14,10 +15,14 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    useRouteMatch,
   } from "react-router-dom";
 
 function App() {
+
+    // let match = useRouteMatch();
+
     return ( 
         <div className="App">
             <Router>
@@ -37,8 +42,13 @@ function App() {
 
                             </Route>
                             <Route path="/tenders">
+                                <Route path={`/tenders/archival`}>
 
-                            </Route>
+                                </Route>
+                                <Route path={`/tenders/current`}>
+                                    <Content />
+                                </Route>    
+                            </Route>        
                             <Route path="/regulations">
 
                             </Route>

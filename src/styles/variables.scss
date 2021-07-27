@@ -13,6 +13,14 @@ $colorWhite: #FEFEFE;
 
 $fontManrope: 'Manrope', sans-serif;
 
+@mixin fontSize12px {
+    font-size: 12px;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 11px;
+    }
+}
+
 @mixin fontSize14px {
     font-size: 14px;
 
